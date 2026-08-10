@@ -1,0 +1,57 @@
+i checked for malware using VirusTotal (no issues found)!
+
+SUMMARY ICT283 ASSIGNMENT 2
+
+PROGRAM FUNCTIONALITY:
+
+FULLY WORKING:
+- Data file reading and parsing from multiple CSV files
+- BST implementation with function pointer traversal
+- Map wrapper implementation using std::map
+- Vector wrapper implementation using std::vector
+- Data aggregation into monthly structures
+- Menu system with all 4 options functional
+- Statistical calculations (mean, std dev, correlation,mad)
+- Unit conversions (m/s to km/h, W/m² to kWh/m²)
+- CSV export functionality for Option 4
+
+PARTIALLY WORKING:
+- Duplicate record handling: Program detects duplicates but may have edge cases with identical records
+- Solar radiation filtering: Option 3 uses 100 W/m² threshold as required
+- Previously in Assignment 1 only records with SR>=100 were being parsed and stored because i misunderstood the assignment requirement which is now commented out in the code! 
+
+LIMITATIONS:
+- BST is unbalanced which could affect performance with large sorted datasets
+- No explicit handling for very large datasets that might cause stack overflow in recursive BST
+- Error handling for malformed data files could be more robust
+- some calculations might be +1/-1 as for total SR i calculate total and then convert the unit whereas when calculating average wind speed all values are converted and then average is calculated
+
+DATA STRUCTURES:
+
+BST Requirements Met:
+- Template-based implementation
+- Function pointer traversal (inOrderTraversal)
+- All basic operations (insert, search)
+- Proper memory management
+
+Map Requirements Met:
+- Wrapper around std::map implemented
+- Minimal but complete interface (inserts, contains, get)
+- Used throughout data aggregation 
+
+Vector Requirements Met:
+- Proper encapsulation of std::vector
+- Used throughout program
+
+
+PERFORMANCE CHARACTERISTICS:
+- BST provides O(log n) search for dates (unbalanced worst-case O(n))
+- Map provides O(log n) lookups for monthly data
+- Vector provides O(1) random access for data arrays
+
+TESTING COVERAGE:
+- Manual testing performed with provided data files
+- Cross-verified statistical calculations with spreadsheet
+- All menu options tested with various input combinations
+- Edge cases tested (no data scenarios, invalid inputs)
+
