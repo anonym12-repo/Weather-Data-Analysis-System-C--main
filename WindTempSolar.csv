@@ -1,0 +1,10 @@
+2016
+Month,Average Wind Speed(stdev, mad),Average Ambient Temperature(stdev, mad),Solar Radiation
+March,27.0(2.5,1.8),22.8(0.4,0.3),2.3
+April,25.2(nan,0.0),28.5(nan,0.0),1.5
+May,28.8(5.1,3.6),25.9(7.6,5.4),1.0
+June,39.6(5.1,3.6),33.5(1.0,0.7),0.5
+July,30.6(7.6,5.4),37.5(1.1,0.8),0.6
+August,32.4(nan,0.0),34.5(nan,0.0),0.2
+September,14.4(nan,0.0),30.1(nan,0.0),1.7
+November,18.0(nan,0.0),22.8(nan,0.0),1.1
